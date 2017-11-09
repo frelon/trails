@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace IdentityTest
+namespace Trails.Web
 {
     public class FilterConfig
     {

@@ -8,9 +8,9 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using IdentityTest.Models;
+using Trails.Web.Models;
 
-namespace IdentityTest.Controllers
+namespace Trails.Web.Controllers
 {
     [Authorize]
     public class AccountController : Controller

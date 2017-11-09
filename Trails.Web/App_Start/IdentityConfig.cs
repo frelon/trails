@@ -10,9 +10,9 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
-using IdentityTest.Models;
+using Trails.Web.Models;
 
-namespace IdentityTest
+namespace Trails.Web
 {
     public class EmailService : IIdentityMessageService
     {

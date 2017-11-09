@@ -1,8 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(IdentityTest.Startup))]
-namespace IdentityTest
+[assembly: OwinStartupAttribute(typeof(Trails.Web.Startup))]
+namespace Trails.Web
 {
     public partial class Startup
     {
