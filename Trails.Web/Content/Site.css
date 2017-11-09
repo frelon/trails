@@ -42,3 +42,8 @@ p, h1, h2, h3, h4, label, dt {
     -o-background-size: cover;
     background-size: cover;
 }
+
+#map {
+    height: 400px;
+    width: 100%;
+}
