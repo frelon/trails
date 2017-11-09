@@ -10,6 +10,16 @@ namespace Trails.Web.Controllers
     {
         public ActionResult Index()
         {
+            if(Request.IsAuthenticated)
+            {
+                return RedirectToAction("Map");
+            }
+
+            return View();
+        }
+
+        public ActionResult Map()
+        {
             return View();
         }
     }

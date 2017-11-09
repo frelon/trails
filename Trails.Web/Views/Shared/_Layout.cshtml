@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Trails</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
-<body>
+<body class="background-image">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -20,19 +20,21 @@
                 @Html.ActionLink("Trails", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                @*<ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                </ul>
+                </ul>*@
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Trails (<a href="https://github.com/frelon/trails">Source code available on GitHub</a>)</p>
-        </footer>
+
+        <div class="footer">
+            <div class="col-md-6 col-md-offset-2">
+                <p style="color:ghostwhite">&copy; @DateTime.Now.Year - Trails (<a href="https://github.com/frelon/trails">Source code available on GitHub</a>)</p>
+            </div>
+        </div>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
