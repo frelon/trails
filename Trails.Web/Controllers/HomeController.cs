@@ -18,8 +18,11 @@ namespace Trails.Web.Controllers
             return View();
         }
 
+        [Authorize]
         public ActionResult Map()
         {
+            ViewBag.Title = "Hike";
+
             return View();
         }
     }
