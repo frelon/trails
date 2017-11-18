@@ -1,5 +1,6 @@
 Trails.Web/connections.config
 Trails.Web/appSettings.config
+Trails.Web/Scripts/App/node_modules
 
 .vs/
 
