@@ -8,7 +8,10 @@ namespace Trails.Web
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/app")
-                .Include("~/Scripts/App/*.js"));
+                .Include("~/App/dist/bundle.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/history-app")
+                .Include("~/App/dist/history-bundle.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));

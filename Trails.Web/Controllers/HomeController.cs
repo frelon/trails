@@ -25,5 +25,13 @@ namespace Trails.Web.Controllers
 
             return View();
         }
+
+        [Authorize]
+        public ActionResult Trails()
+        {
+            ViewBag.Title = "Trails";
+
+            return View();
+        }
     }
 }

@@ -223,27 +223,27 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Scripts\App\app.js">
+    <Content Include="App\app.js">
       <DependentUpon>app.ts</DependentUpon>
     </Content>
-    <Content Include="Scripts\App\storage.js">
+    <Content Include="App\storage.js">
       <DependentUpon>storage.ts</DependentUpon>
     </Content>
-    <Content Include="Scripts\App\trail.js">
+    <Content Include="App\trail.js">
       <DependentUpon>trail.ts</DependentUpon>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\App\package.json" />
-    <Content Include="Scripts\App\app.js.map">
+    <Content Include="App\app.js.map">
       <DependentUpon>app.ts</DependentUpon>
     </Content>
-    <Content Include="Scripts\App\storage.js.map">
+    <Content Include="App\storage.js.map">
       <DependentUpon>storage.ts</DependentUpon>
     </Content>
-    <Content Include="Scripts\App\trail.js.map">
+    <Content Include="App\trail.js.map">
       <DependentUpon>trail.ts</DependentUpon>
     </Content>
+    <Content Include="package.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -288,6 +288,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Map.cshtml" />
+    <Content Include="Views\Home\Trails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -306,9 +307,10 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="Scripts\App\app.ts" />
-    <TypeScriptCompile Include="Scripts\App\storage.ts" />
-    <TypeScriptCompile Include="Scripts\App\trail.ts" />
+    <TypeScriptCompile Include="App\app.ts" />
+    <TypeScriptCompile Include="App\history-app.ts" />
+    <TypeScriptCompile Include="App\storage.ts" />
+    <TypeScriptCompile Include="App\trail.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
@@ -349,6 +351,9 @@
     <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>
+  <PropertyGroup>
+    <PostBuildEvent>cd $(ProjectDir) &amp;&amp; npm run-script build-dist</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
