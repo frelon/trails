@@ -244,6 +244,7 @@
       <DependentUpon>trail.ts</DependentUpon>
     </Content>
     <Content Include="package.json" />
+    <None Include="Properties\PublishProfiles\trails-test - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

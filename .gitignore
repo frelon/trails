@@ -3,6 +3,7 @@ Trails.Web/appSettings.config
 Trails.Web/Scripts/App/node_modules
 Trails.Web/node_modules
 Trails.Web/App_Data
+Trails.Web/Properties/PublishProfiles
 
 .vs/
 
