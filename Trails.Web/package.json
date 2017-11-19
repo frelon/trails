@@ -1,0 +1,20 @@
+{
+  "name": "trails-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".\\Scripts\\App\\app.js",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^3.8.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-dist": "npm run-script build-app && npm run-script build-history-app",
+
+    "build-app": ".\\node_modules\\.bin\\webpack .\\App\\app.js .\\App\\dist\\bundle.js",
+    "build-history-app": ".\\node_modules\\.bin\\webpack .\\App\\history-app.js .\\App\\dist\\history-bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
