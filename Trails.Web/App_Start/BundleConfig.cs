@@ -8,7 +8,11 @@ namespace Trails.Web
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/app")
-                .Include("~/App/dist/bundle.js"));
+                .Include("~/HikeApp/dist/inline.bundle.js")
+                .Include("~/HikeApp/dist/polyfills.bundle.js")
+                .Include("~/HikeApp/dist/scripts.bundle.js")
+                .Include("~/HikeApp/dist/vendor.bundle.js")
+                .Include("~/HikeApp/dist/main.bundle.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/history-app")
                 .Include("~/App/dist/history-bundle.js"));
