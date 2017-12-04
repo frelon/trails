@@ -214,6 +214,8 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\dist\bundle.js" />
+    <Content Include="App\dist\history-bundle.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\camping-night.jpg" />
@@ -244,7 +246,9 @@
       <DependentUpon>trail.ts</DependentUpon>
     </Content>
     <Content Include="package.json" />
-    <None Include="Properties\PublishProfiles\trails-test - Web Deploy.pubxml" />
+    <Content Include="appSettings.config" />
+    <Content Include="connections.config" />
+    <None Include="Properties\PublishProfiles\trails-app - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -256,7 +260,9 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
