@@ -19,21 +19,15 @@
                 @Html.ActionLink("Trails", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                @*<ul class="nav navbar-nav">
                     <li>@Html.ActionLink("History", "Trails", "Home")</li>
-                </ul>
+                </ul>*@
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
     <div class="container body-content">
         @RenderBody()
-
-        @*<div class="footer">
-            <div class="col-md-6 col-md-offset-2">
-                <p style="color:ghostwhite">&copy; @DateTime.Now.Year - Trails (<a href="https://github.com/frelon/trails">Source code available on GitHub</a>)</p>
-            </div>
-        </div>*@
     </div>
 
     @Scripts.Render("~/bundles/jquery")
