@@ -225,15 +225,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="App\app.js">
-      <DependentUpon>app.ts</DependentUpon>
-    </Content>
-    <Content Include="App\storage.js">
-      <DependentUpon>storage.ts</DependentUpon>
-    </Content>
-    <Content Include="App\trail.js">
-      <DependentUpon>trail.ts</DependentUpon>
-    </Content>
     <Content Include="HikeApp\.gitignore" />
     <Content Include="HikeApp\karma.conf.js" />
     <Content Include="HikeApp\protractor.conf.js" />
@@ -243,15 +234,6 @@
     <Content Include="HikeApp\src\styles.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="App\app.js.map">
-      <DependentUpon>app.ts</DependentUpon>
-    </Content>
-    <Content Include="App\storage.js.map">
-      <DependentUpon>storage.ts</DependentUpon>
-    </Content>
-    <Content Include="App\trail.js.map">
-      <DependentUpon>trail.ts</DependentUpon>
-    </Content>
     <Content Include="package.json" />
     <Content Include="appSettings.config" />
     <Content Include="connections.config" />
@@ -317,6 +299,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="HikeApp\src\app\shared\model\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
