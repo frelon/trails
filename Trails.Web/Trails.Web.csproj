@@ -230,6 +230,8 @@
     <Content Include="HikeApp\protractor.conf.js" />
     <Content Include="HikeApp\src\app\app.component.css" />
     <Content Include="HikeApp\src\app\app.component.html" />
+    <Content Include="HikeApp\src\app\welcome\welcome.component.css" />
+    <Content Include="HikeApp\src\app\welcome\welcome.component.html" />
     <Content Include="HikeApp\src\index.html" />
     <Content Include="HikeApp\src\styles.css" />
     <Content Include="Scripts\bootstrap.js" />
@@ -320,11 +322,12 @@
     <TypeScriptCompile Include="App\trail.ts" />
     <TypeScriptCompile Include="HikeApp\e2e\app.e2e-spec.ts" />
     <TypeScriptCompile Include="HikeApp\e2e\app.po.ts" />
-    <TypeScriptCompile Include="HikeApp\src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="HikeApp\src\app\app.component.ts" />
     <TypeScriptCompile Include="HikeApp\src\app\app.module.ts" />
     <TypeScriptCompile Include="HikeApp\src\app\shared\model\storage.ts" />
     <TypeScriptCompile Include="HikeApp\src\app\shared\model\trail.ts" />
+    <TypeScriptCompile Include="HikeApp\src\app\welcome\welcome.component.spec.ts" />
+    <TypeScriptCompile Include="HikeApp\src\app\welcome\welcome.component.ts" />
     <TypeScriptCompile Include="HikeApp\src\environments\environment.prod.ts" />
     <TypeScriptCompile Include="HikeApp\src\environments\environment.ts" />
     <TypeScriptCompile Include="HikeApp\src\main.ts" />
