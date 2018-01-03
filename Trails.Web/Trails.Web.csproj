@@ -299,7 +299,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="HikeApp\src\app\shared\model\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -324,6 +323,8 @@
     <TypeScriptCompile Include="HikeApp\src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="HikeApp\src\app\app.component.ts" />
     <TypeScriptCompile Include="HikeApp\src\app\app.module.ts" />
+    <TypeScriptCompile Include="HikeApp\src\app\shared\model\storage.ts" />
+    <TypeScriptCompile Include="HikeApp\src\app\shared\model\trail.ts" />
     <TypeScriptCompile Include="HikeApp\src\environments\environment.prod.ts" />
     <TypeScriptCompile Include="HikeApp\src\environments\environment.ts" />
     <TypeScriptCompile Include="HikeApp\src\main.ts" />
